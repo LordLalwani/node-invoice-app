@@ -4,7 +4,7 @@ import { mergeInvoices, cloneInvoice, invoiceToString } from "./helpers/invoiceH
 import { removeLineItemsByIdFromInvoice, createInvoiceWithLineItems } from "./helpers/lineItemHelpers";
 
 const main = () => {
-    console.log("Welcome to Xero Tech Test!");
+    console.log("Welcome!");
 
     // --------- ADDING ONE LINE ITEM TO INVOICE -------------
     const lineItem0 = new InvoiceLineItem(1, 6.99, 1, "Apple");

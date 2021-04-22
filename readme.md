@@ -1,6 +1,6 @@
-# Xero Technical Challenge - Typescript Invoice App
+# Typescript Invoice App
 
-Hello Xero team, please read the following to get further context on my decision making with this technical challenge and how to get it up and running. 
+Please read the following to get further context on my decision making with this technical challenge and how to get it up and running. 
 
 ## Considerations & Decisions before starting the exercise
 
