@@ -20,6 +20,16 @@ Please read the following to get further context on my decision making with this
 2. I also wanted to handle currencies and price values (in relation to rounding etc), especially when getting the total price of an invoice. I was thinking of using `https://currency.js.org/` as the framework. 
 
 
+## Limitations / future upgrade notes
+
+1. There is a clear distinction and separations of concerns between the invoiceLineItem class and Invoice class however in this particular code base it does allow multiple ways to do the same thing which is a little bit redundant. E.g you can create invoice line items and also Invoices separately but in terms of a relationship point of view, invoice line items have a direct relationship with an invoice as they belong to them. So perhaps it might have been a good idea to incorporate them together. 
+
+2. Helper functions might have been a little bit unnecessary, but at the time I was thinking of creating an abstracted behavioral layer which would allow me to add common functionality e.g logging, analytical layers while also keeping the class methods as refined as possible.  
+
+3. No contingency planning in terms of logging and creating local backups.
+
+4. Some functions could have been more helpful e.g removeLineItemsByIdFromInvoice It could have returned back an invoice instead of just being an action. 
+
 ## Installation
 
 ```bash
