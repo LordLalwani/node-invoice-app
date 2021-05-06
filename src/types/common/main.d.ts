@@ -7,10 +7,13 @@ interface I_InvoiceLineItem {
 
 interface I_Invoice {
     invoiceDate: Date;
+    region: string;
     readonly invoiceNumber: string;
+    tax: number;
 
     addLineItem: (lineItem: InvoiceLineItem) => void;
     removeLineItemById: (invoiceNumber: number) => void;
+    changeRegion: (regionCode: sting) => void;
     getTotal: () => number;
     mergeInvoice: (invoice: Invoice) => Invoice;
     clone: () => Invoice;
